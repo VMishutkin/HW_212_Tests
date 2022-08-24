@@ -16,29 +16,30 @@ public class CalculatorController {
     }
 
     @GetMapping
-    public String greetings(){
+    public String greetings() {
         return calculatorService.greetings();
     }
 
 
     @GetMapping("/plus")
-    public String plus(String num1, String num2){
+    public String plus(String num1, String num2) {
         return calculatorService.plus(num1, num2);
     }
+
     @GetMapping("/minus")
-    public String minus(String num1, String num2){
+    public String minus(String num1, String num2) {
         return calculatorService.minus(num1, num2);
     }
+
     @GetMapping("/multiply")
-    public String multiply(String num1, String num2){
+    public String multiply(String num1, String num2) {
         return calculatorService.multiply(num1, num2);
     }
+
     @GetMapping("/divide")
-    public String divide(String num1, String num2){
+    public String divide(String num1, String num2) {
         return calculatorService.divide(num1, num2);
     }
-
-
 
 
 }
